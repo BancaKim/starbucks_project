@@ -1,9 +1,9 @@
 .signin {
     margin-top: 120px;
     padding: 100px 0 150px;
-    background-image: url("../images/signin_bg.jpg");
+    background-image: url("../newimage/signin_bg.jpeg");
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: center top;
     background-attachment: fixed;
     background-size: cover;
   }
@@ -18,7 +18,7 @@
     width: 500px;
     margin: 0 auto;
     border-radius: 6px;
-    background-color: #F6F5F0;
+    background-color: #fff;
     box-shadow: 2px 2px 20px rgba(0,0,0,.3);
     color: #555;
   }
@@ -32,6 +32,7 @@
     font-weight: 700;
     color: #006633;
   }
+
   .signin__card form {
     padding: 30px 22px;
   }
@@ -44,6 +45,7 @@
     outline: none;
     box-sizing: border-box;
     font-size: 14px;
+    background-color: #F6F5F0;
   }
   .signin__card form [type="submit"] {
     background-color: #006633;
@@ -52,14 +54,37 @@
     font-size: 20px;
     cursor: pointer;
   }
+
+  .signin__card form .checkWrap{
+    width:100%;
+    display:flex;
+    justify-content:flex-start;
+    /* align-items: center; */
+    margin-bottom: 10px;
+  }
+
+  .signin__card form .checkWrap .mem2{
+    width:30px;
+    /* border-radius:50%;
+    appearance: none;
+    /* height: 1rem; */
+    border: 1px solid #999;
+    cursor:pointer; */
+  }
+
+  .signin__card form .checkWrap .mem2:checked{
+    background:#32e732;
+    border:none;
+  }
+
   .signin__card form p {
     font-size: 12px;
     color: #006633;
-    text-align: center;
+    text-align: left;
   }
   .signin__card .actions {
     display: flex;
-    border-top: 1px solid #ddd;
+    /* border-top: 1px solid #ddd; */
   }
   .signin__card .actions a {
     flex-grow: 1;

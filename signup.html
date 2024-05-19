@@ -26,7 +26,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
     <link rel="stylesheet" href="./css/common.css">
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/signup2.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.21/lodash.min.js"
         integrity="sha512-WFN04846sdKMIP5LKNphMaWzU7YpMyCU245etK3g/2ARYbPK9Ub18eG+ljU96qKRCWh+quCY7yefSmlkQw1ANQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
@@ -51,7 +51,6 @@
 </head>
 
 <body>
-    <!-- HEADER -->
     <header>
         <div class="inner">
             <a href="/" CLASS="logo">
@@ -60,7 +59,7 @@
             <div class="sub-menu">
                 <ul class="menu">
                     <li>
-                        <a href="/signin.html">Sign In</a>
+                        <a href="/signup.html">Sign In</a>
                     </li>
                     <li>
                         <a href="javascript:void(0)">My Starbucks</a>
@@ -383,172 +382,69 @@
             </div>
         </div>
     </header>
-    <!-- visual -->
-    <section class="visual">
-        <div class="inner">
-            <div class="title fade-in">
-                <img src="./newimage/visual_title.png" alt="LIGHT UP YOUR SUMMER">
-                <a href="javascript:void(0)" class="btn btn--green">자세히 보기</a>
-            </div>
-            <div class="fade-in">
-                <img src="./newimage/visual_cup3.png" alt="double lemon blended" class="cup1 image">
-            </div>
-            <div class="fade-in">
-                <img src="./newimage/visual_cup2.png" alt="sea salt caramel cold brew" class="cup2 image">
-            </div>
-            <div class="fade-in">
-                <img src="./newimage/visual_cup1.png" alt="spoon" class="cup3 image">
-            </div>
-        </div>
-    </section>
-    <!-- NOTICE -->
-    <section class="notice">
-        <div class="notice-line">
-            <div class="bg-left"></div>
-            <div class="bg-right"></div>
-            <div class="inner">
+   <!-- signup -->
 
-                <div class="inner__left">
-                    <h2>공지사항</h2>
-                    <div class="swiper-container">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <a href="javascript:void(0)">SCI평가정보 시스템 점검으로 인한 서비스 제한 안내</a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="javascript:void(0)">시스템 개선 및 서비스 점검 안내</a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="javascript:void(0)">삼성카드 앱 주문 서비스 제휴 종료 안내</a>
-                            </div>
-                            <div class="swiper-slide">
-                                <a href="javascript:void(0)">신한카드 앱 주문 서비스 제휴 종료 안내</a>
-                            </div>
-                        </div>
-                    </div>
-                    <a href="javascript:void(0)" class="notice-line__more">
-                        <div class="material-symbols-outlined">
-                            add_circle
-                        </div>
-                    </a>
-                </div>
-                <div class="inner__right">
-                    <h2>스타벅스 프로모션</h2>
-                    <div class="toggle-promotion">
-                        <div class="material-symbols-outlined">
-                            upload
-                        </div>
-                    </div>
-                </div>
+    <section class="signup">
+        <h1>회원가입</h1>
+        <div class="signup__card">
+        <img src="./newimage/icon_find_sally.png" alt="">
+        <h2>
+        회원정보를 입력해주세요.
+        </h2>
+        <form action = "../joinAction.lo" id="regiform" method="post">
+            <table class="signup">
+                <tr>
+                <td colspan="2" bgcolor="#ddd">회원기본정보 </td>
+                </tr>
+        
+                <tr> 
+                <td>아이디</td>
+                <td> <input type="text" name="user_id" id="id" size="20"> 4~12자의 영문 대소문자와 숫자로만 입력 </td>
+                </tr>
+        
+                <tr> 
+                <td>비밀번호</td>
+                <td> <input type="password" name="user_pw" id="password" size="20"> 4~12자의 영문 대소문자와 숫자로만 입력 </td>
+                </tr>
+                
+                <tr> 
+                <td>비밀번호 확인</td>
+                <td><input type="password" name="checkPassword" id="checkPassword"  size="20"> </td>
+                </tr>
+                
+                <tr> 
+                <td>메일주소</td>
+                <td> <input type="text" name="email" id="email" size="20"> 예)  id@domain.com </td>
+                </tr>
+                
+                <tr> 
+                <td>이름</td>
+                <td><input type="text" name="user_name" id="userName" size="20"> </td>
+                </tr>
+                
+                <tr style="height: 40px;">
+                <td colspan="2" bgcolor="#ddd">개인 신상 정보 </td>
+                </tr>
+                
+                <tr> 
+                <td>주민등록번호</td>
+                <td> <input type="text" name="ssn" id="ssn" size="20"> 예)1234561234567 </td>
+                </tr>
+                
+                <tr> 
+                <td>닉네임</td>
+                <td><input type="text" name="nickname" id="nickname" size="20"></textarea> </td>
+                </tr>
+            </table>
+            <div class="signup_btn">
+                <input type="submit" value="작성 완료"/>
+                <input type="reset" value="다시 작성하기"/>    
             </div>
-        </div>
-        <div class="promotion">
-            <div class="swiper-container">
-                <div class="swiper-wrapper">
-                    <div class="swiper-slide">
-                        <img src="./newimage/promotion_slide1.jpg" alt="2021 뉴이어, 스타벅스와 함께 즐겁고 활기차게 시작하세요!">
-                        <a href="javascript:void(0)" class="btn">자세히 보기</a>
-                    </div>
-                    <div class="swiper-slide">
-                        <img src="./newimage/promotion_slide2.jpg" alt="아메리카노 e-쿠폰">
-                        <a href="javascript:void(0)" class="btn">자세히 보기</a>
-                    </div>
-                </div>
-            </div>
-            <div class="swiper-pagination"></div>
-            <div class="swiper-prev">
-                <span class="material-symbols-outlined">
-                    arrow_back
-                    </span>
-            </div>
-            <div class="swiper-next">
-                <span class="material-symbols-outlined">
-                    arrow_forward
-                    </span>
-            </div>
-        </div>
-    </section>
-    <!-- REWARDS -->
-    <section class="rewards">
-        <div class="bg-left"></div>
-        <div class="bg-right"></div>
-        <div class="inner">
-            <div class="btn-group">
-                <div class="btn btn--reverse sign-up">회원가입</div>
-                <div class="btn sign-in">로그인</div>
-                <div class="btn gift">스타벅스 모일 카드 선물하기</div>
-            </div>
-        </div>
-    </section>
-    <!-- season product -->
-    <section class="season-product scroll-spy">
-        <div class="inner">
-            <img src="./newimage/season_product_image.png" alt="" class="product back-to-position to-right delay-0"/>
-            <div class="text-group"> 
-                <img src="./newimage/season_product_text1.png" alt="" class="title back-to-position to-left delay-1"/>
-                <div class="more back-to-position to-left delay-3">
-                    <a href="javascript:void(0)" class="btn btn--brown">자세히 보기</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    
-        <!-- season product2 -->
-    <section class="season-product2 scroll-spy">
-        <div class="inner">
-            <img src="./newimage/season_product2_image.png" alt="" class="product back-to-position to-right delay-0"/>
-            <div class="text-group"> 
-                <img src="./newimage/season_product2_text1.png" alt="" class="title back-to-position to-left delay-1"/>
-                <div class="more back-to-position to-left delay-3">
-                    <a href="javascript:void(0)" class="btn btn--brown">자세히 보기</a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- pick your favorite -->
-    <section class="pick-your-favorite scroll-spy">
-        <div class="inner">
-            <img src="./newimage/favorite_image.png" alt="">
-            <div class="text-group">
-                <img src="./images/favorite_text1.png" alt="" class="title back-to-position to-right delay-0"/>
-                <img src="./images/favorite_text2.png" alt="" class="description back-to-position to-right delay-1"/>
-                <div class="more back-to-position to-right delay-3">
-                    <a href="javascript:void(0)" class="btn btn--white">자세히 보기</a>
-                </div>
-            </div>
-        </div>
-    </section>
+            </form>
+    </div>
+  </section>
 
-    <!-- reserve coffee -->
-    <section class="reserve-coffee scroll-spy">
-        <div class="inner">
-            <div class="text-group">
-                <img src="./newimage/reserve_text.png" alt="" class="description back-to-position to-right delay-1">
-                <div class="more back-to-position to-right delay-2">
-                    <a href="javascript:void(0)" class="btn">자세히 보기</a>
-                </div>
-            </div>
-            <img src="../newimage/reserve_image.png" alt="" class="product back-to-position to-left delay-3"/>
-        </div>
-    </section>
 
-    <!-- find the store -->
-    <section class="find-store scroll-spy">
-        <div class="inner">
-            <img src="./images/find_store_texture1.png" alt="" class="texture1"/>
-            <img src="./images/find_store_texture2.png" alt="" class="texture2"/>
-            <img src="./newimage/find_store_picture1.png" alt="" class="picture picture1 back-to-position to-right delay-0"/>
-            <img src="./newimage/find_store_picture2.png" alt="" class="picture picture2 back-to-position to-right delay-1"/>
-
-            <div class="text-group">
-                <img src="./newimage/find_store_text1.png" alt="" class="title  back-to-position to-left delay-0"/>
-                <img src="./newimage/find_store_text2.png" alt="" class="description back-to-position to-left delay-1"/>
-                <div class="more back-to-position to-left delay-2">
-                    <a href="javascript:void(0)" class="btn">매장찾기</a>
-                </div>
-            </div>
-        </div>
-    </section>
     <!-- AWARDS -->
     <section class="awards">
         <div class="inner">
@@ -591,45 +487,38 @@
         </div>
 
     </section>
-    <!-- footer -->
-    <footer>
-        <div class="inner">
-            <ul class="menu">
-                <li><a href="javascript:void(0)" class="green">개인정보처리방침</a></li>
-                <li><a href="javascript:void(0)">영상정보처리기기 운영관리 방침</a></li>
-                <li><a href="javascript:void(0)">홈페이지 이용약관</a></li>
-                <li><a href="javascript:void(0)">위치정보 이용약관</a></li>
-                <li><a href="javascript:void(0)">스타벅스 카드 이용약관</a></li>
-                <li><a href="javascript:void(0)">신세계 유니버스 클럽 이용약관</a></li>
-                <li><a href="javascript:void(0)">비회원 이용약관</a></li>
-                <li><a href="javascript:void(0)">My DT Pass 서비스 이용약관</a></li>
-                <li><a href="javascript:void(0)">윤리경영 핫라인</a></li>
-            </ul>
-            <div class="btn-group">
-                <a href="javascript:void(0)" class="btn btn--white">찾아오시는 길</a>
-                <a href="javascript:void(0)" class="btn btn--white">신규입점 제의</a>
-                <a href="javascript:void(0)" class="btn btn--white">사이트 맵</a>
+        <!-- footer -->
+        <footer>
+            <div class="inner">
+                <ul class="menu">
+                    <li><a href="javascript:void(0)" class="green">개인정보처리방침</a></li>
+                    <li><a href="javascript:void(0)">영상정보처리기기 운영관리 방침</a></li>
+                    <li><a href="javascript:void(0)">홈페이지 이용약관</a></li>
+                    <li><a href="javascript:void(0)">위치정보 이용약관</a></li>
+                    <li><a href="javascript:void(0)">스타벅스 카드 이용약관</a></li>
+                    <li><a href="javascript:void(0)">신세계 유니버스 클럽 이용약관</a></li>
+                    <li><a href="javascript:void(0)">비회원 이용약관</a></li>
+                    <li><a href="javascript:void(0)">My DT Pass 서비스 이용약관</a></li>
+                    <li><a href="javascript:void(0)">윤리경영 핫라인</a></li>
+                </ul>
+                <div class="btn-group">
+                    <a href="javascript:void(0)" class="btn btn--white">찾아오시는 길</a>
+                    <a href="javascript:void(0)" class="btn btn--white">신규입점 제의</a>
+                    <a href="javascript:void(0)" class="btn btn--white">사이트 맵</a>
+                </div>
             </div>
-        </div>
-
-        <div class="info">
-            <span>사업자등록번호 201-81-21515</span>
-            <span>주식회사 에스씨케이컴퍼니 대표이사 : 손정현</span>
-            <span>TEL: 1522-3232</span>
-            <span>개인정보 보호책임자 : 이찬우</span>
-        </div>
-
-        <p class="copyright">
-            &copy;<span class="this-year"></span>&nbsp;Starbucks Coffee Company. All Rights Reserved.
-        </p>
-        <img src="./images/starbucks_logo_only_text.png" alt="" class="logo"/>
-    </footer>
-
-    <div id="to-top">
-        <span class="material-symbols-outlined">
-            arrow_upward
-        </span>
-    </div>
-</body>
-
-</html>
+    
+            <div class="info">
+                <span>사업자등록번호 201-81-21515</span>
+                <span>주식회사 에스씨케이컴퍼니 대표이사 : 손정현</span>
+                <span>TEL: 1522-3232</span>
+                <span>개인정보 보호책임자 : 이찬우</span>
+            </div>
+    
+            <p class="copyright">
+                &copy;<span class="this-year"></span>&nbsp;Starbucks Coffee Company. All Rights Reserved.
+            </p>
+            <img src="./images/starbucks_logo_only_text.png" alt="" class="logo"/>
+        </footer>
+    </body>
+    </html>

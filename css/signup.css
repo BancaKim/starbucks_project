@@ -1,0 +1,176 @@
+.signup {
+    margin-top: 120px;
+    padding: 100px 0 150px;
+  }
+  .signup h1 {
+    color: #333;
+    font-size: 30px;
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  .signup__card {
+    width: 600px;
+    margin: 0 auto;
+    border-radius: 6px;
+    background-color: #fff;
+    /* box-shadow: 2px 2px 20px rgba(0,0,0,.3); */
+    color: #555;
+    border: 1px solid #ddd;
+  }
+
+  .signup__card img {
+    margin:0 auto;
+    padding-top: 30px;
+}
+  .signup__card h2 {
+    padding: 30px;
+    font-size: 18px;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+  .signup__card h2 strong {
+    font-weight: 700;
+    color: #006633;
+  }
+
+  .signup__card form {
+    padding: 30px 22px;
+  }
+
+  .signup__card form h2 {
+    margin:0;
+    padding:0;
+    padding-bottom: 10px;
+    text-align: left;
+    font-weight: 700;
+    color:#333;
+    border-bottom: none;
+  }
+  .signup__card form .ckb1 {
+    display:flex;
+    justify-content: space-between;
+  }
+
+  .signup__card form .ckb1 .box_ckb1{
+    appearance: none;
+    border-radius: 50%;
+    height: 1.5rem;
+    width: 1.5rem;
+    cursor:pointer;
+    background-image: url(../newimage/checkoff.png);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .signup__card form .ckb1 .box_ckb1:checked{
+    appearance: none;
+    border-radius: 50%;
+    height: 1.5rem;
+    width: 1.5rem;
+    cursor:pointer;
+    background-image: url(../newimage/checkon.png);
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .signup__card form img{
+    width:100%;
+    margin-top:0;
+    padding-top:0;
+  }
+
+  .signup__card form [type="submit"] {
+    background-color: #006633;
+    border: none;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+  }
+
+  .signup__card form .checkWrap{
+    width:100%;
+    display:flex;
+    justify-content:flex-start;
+    /* align-items: center; */
+    margin-bottom: 10px;
+  }
+
+  .signup__card form .checkWrap .mem2{
+    width:30px;
+    /* border-radius:50%;
+    appearance: none;
+    /* height: 1rem; */
+    border: 1px solid #999;
+    cursor:pointer; */
+  }
+
+  .signup__card form .checkWrap .mem2:checked{
+    background:#32e732;
+    border:none;
+  }
+
+  .signup__card form ul.mem_notice{
+    list-style-type: circle;
+  }
+
+  .signup__card form ul li{
+    margin-left:20px;
+  }
+  
+  .signup__card .actions {
+    display: flex;
+    /* border-top: 1px solid #ddd; */
+  }
+  .signup__card .actions a {
+    flex-grow: 1;
+    flex-basis: 0;
+    text-align: center;
+    padding: 20px;
+    color: #555;
+    font-size: 14px;
+    border-right: 1px solid #ddd;
+  }
+  .signup__card .actions a:hover {
+    text-decoration: underline;
+  }
+  .signup__card .actions a:last-child {
+    border-right: none;
+  }
+
+  .signup__card .mem_accreditation h2{
+    text-align: center;
+    margin: 20px;
+  }
+
+
+  .signup__card .mem_accreditation .mem_accreditation_info .li1 a,
+  .signup__card .mem_accreditation .mem_accreditation_info .li2 a,
+  .signup__card .mem_accreditation .mem_accreditation_info .li3 a {
+    display: flex;
+    justify-content: flex-start;
+    border: 1 solid #333;
+    text-decoration: none;
+    color: #333;
+    font-weight: 700;
+    font-size: 20px;
+    box-shadow: 0 0 12px 0 rgba(0, 0, 0, 0.08);
+    border-radius: 16px;
+    align-items: center;
+    height: 100px;
+}
+
+  .signup__card .mem_accreditation .mem_accreditation_info .li1 a .toss_icon,
+  .signup__card .mem_accreditation .mem_accreditation_info .li2 a .cellphone_icon,
+  .signup__card .mem_accreditation .mem_accreditation_info .li3 a .kakao_icon {
+    background-size: 26px;
+    width:26px;
+    margin: 10px;
+  }
+
+
+  .signup__card .mem_accreditation .mem_accreditation_info .li1 p,
+  .signup__card .mem_accreditation .mem_accreditation_info .li2 p,
+  .signup__card .mem_accreditation .mem_accreditation_info .li3 p {
+flex-grow: 1;
+  }
